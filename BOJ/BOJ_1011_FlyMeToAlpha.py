@@ -2,19 +2,16 @@ import sys
 
 
 def getresult(diff):
-    ans = 2
-    tmp = 2
-    cnt = 1
-    if diff == 1:
-        return 1
-    else:
-        while True:
-            for j in range(cnt):
-                if tmp > diff:
-                    return ans-1
-                tmp += cnt
-                ans += 1
-            cnt += 1
+    n = 1
+    ans = 0
+    while True:
+        ans += 1
+        if n*n >= diff:
+            return ans
+        ans += 1
+        if n*(n+1) >= diff:
+            return ans
+        n += 1
 
 
 T = int(sys.stdin.readline().rstrip())
