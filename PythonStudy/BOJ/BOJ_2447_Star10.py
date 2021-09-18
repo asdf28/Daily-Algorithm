@@ -16,6 +16,3 @@ for i in range(N):
     for j in range(N):
         star10(i, j, N)
     print("")
-
-
-
