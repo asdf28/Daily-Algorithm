@@ -9,7 +9,6 @@ public class BOJ_2231_Decomposition {
 	    int     M = 0;
 	    int     Temp = 1;
 	    int     Remainder = 0;
-	
 	    Scanner Input = new Scanner(System.in);
 	
 	
