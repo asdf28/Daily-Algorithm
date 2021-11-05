@@ -1,9 +1,9 @@
+.idea
 PythonStudy/venv
 PythonStudy/.idea
 JavaStudy/BOJ/bin
 JavaStudy/.metadata
-JavaStudy/BOJ/src/Main.java
-JavaStudy/BOJ/.classpath
-JavaStudy/BOJ/.gitignore
-JavaStudy/BOJ/.project
-JavaStudy/BOJ/.settings
+JavaStudy/BOJ/.idea
+JavaStudy/BOJ/BOJ.iml
+JavaStudy/BOJ/out
+JavaStudy/BOJ/src/main.java
