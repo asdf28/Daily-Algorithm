@@ -10,7 +10,7 @@ direct = ['L', 'R', 'U', 'D']
 
 pos_x = 0
 pos_y = 0
-#
+
 for plan in plans:
     for i in range(4):
         if plan == direct[i]:
