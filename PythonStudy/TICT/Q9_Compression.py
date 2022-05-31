@@ -10,7 +10,9 @@ def solution(s):
         while True:
             if i + (2*unit) > len(s):
                 if cnt != 1:
-                    compressed.append(cnt)
+                    #compressed.append(cnt)
+                    for k in map(int,str(cnt)):
+                        compressed.append(k)
                 for tmp in s[i:]:
                     compressed.append(tmp)
                 break
@@ -21,10 +23,13 @@ def solution(s):
                     break
             if not recurse:
                 if cnt != 1:
-                    compressed.append(cnt)
+                    #compressed.append(cnt)
+                    for k in map(int, str(cnt)):
+                        compressed.append(k)
                 for j in range(unit):
                     compressed.append(s[i+j])
                 cnt = 1
+
             else:
                 cnt += 1
             i += unit
