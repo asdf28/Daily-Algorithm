@@ -1,13 +1,18 @@
 import sys
 
-if __name__ == "__main__":
+
+def solution():
+    N = int(sys.stdin.readline().rstrip())
     arr = []
 
-    n = int(sys.stdin.readline().rstrip())
-
-    for i in range(n):
-        arr.append(sys.stdin.readline().rstrip())
+    for i in range(N):
+        arr.append(int(sys.stdin.readline().rstrip()))
 
     arr.sort(reverse=True)
 
-    print(arr)
+    for e in arr:
+        print(e)
+
+
+if __name__ == "__main__":
+    solution()
