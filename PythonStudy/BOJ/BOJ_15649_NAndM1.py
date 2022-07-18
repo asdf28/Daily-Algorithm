@@ -1,40 +1,55 @@
 import sys
 
 
-def backtracking(depth, li, visited, answer):
-    if depth == M:
-        for e in answer:
-            print(e, end=" ")
-        print()
+def solution(cur, pick, ans, visited):
+    if pick == 0:
+        print(ans)
         return
 
     for i in range(N):
         if visited[i]:
             continue
 
-        # visited[i] = True
-        answer.append(li[i])
-        backtracking(depth+1, li, visited, answer)
-        # visited[i] = False
-        answer.pop()
+        visited[i] = True
+        ans.append(i+1)
+        solution(i, pick-1, ans, visited)
+        ans.pop()
+        visited[i] = False
+
+
+if __name__ == "__main__":
+    N, M = map(int, sys.stdin.readline().split())
+
+    solution(0, M, [], [False] * N)
 
 
 
-def solution():
-    li = []
-    tmp = set()
-    visited = [False] * N
-    answer = []
-
-    li = list(map(int,sys.stdin.readline().split()))
-
-    li.sort()
-    #
-    # for x in range(N):
-    #     li.append(x+1)
-
-    backtracking(0, li, visited, answer)
 
 
-N, M = map(int, sys.stdin.readline().split())
-solution()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
